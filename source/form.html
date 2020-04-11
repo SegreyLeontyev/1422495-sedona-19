@@ -32,16 +32,16 @@
         <legend class="query-form__subtitle">Представьтесь:</legend>
         <ul class="query-form__list">
           <li class="query-form__item">
-            <label class="query-form__item-title">Имя*:</label>
-            <input class="query-form__input" name="name" type="text" placeholder="Петр" value="" />
+            <label class="query-form__item-title" for="name">Имя*:</label>
+            <input class="query-form__input" id="name" name="name" type="text" placeholder="Петр" value="" />
           </li>
           <li class="query-form__item">
-            <label class="query-form__item-title">Фамилия*:</label>
-            <input class="query-form__input" name="surname" type="text" placeholder="Иванов" value="" />
+            <label class="query-form__item-title" for="surname">Фамилия*:</label>
+            <input class="query-form__input" id="surname" name="surname" type="text" placeholder="Иванов" value="" />
           </li>
           <li class="query-form__item">
-            <label class="query-form__item-title">Фамилия*:</label>
-            <input class="query-form__input" name="patronymic" type="text" placeholder="Александрович" value="" />
+            <label class="query-form__item-title" for="patronymic">Отчество*:</label>
+            <input class="query-form__input" id="patronymic" name="patronymic" type="text" placeholder="Александрович" value="" />
           </li>
         </ul>
       </fieldset>
@@ -49,12 +49,12 @@
         <legend class="query-form__subtitle">Представьтесь:</legend>
         <ul class="query-form__list">
           <li class="query-form__item">
-            <label class="query-form__item-title">Контактный телефон*:</label>
-            <input class="query-form__input query-form__input--phone" name="phone" type="text" placeholder="Введите телефон" value="" />
+            <label class="query-form__item-title" for="phone">Контактный телефон*:</label>
+            <input class="query-form__input query-form__input--phone" id="phone" name="phone" type="tel" placeholder="Введите телефон" value="" />
           </li>
           <li class="query-form__item">
-            <label class="query-form__item-title">Электронная почта*:</label>
-            <input class="query-form__input query-form__input--email" name="email" type="text" placeholder="Введите e-mail" value="" />
+            <label class="query-form__item-title" for="email">Электронная почта*:</label>
+            <input class="query-form__input query-form__input--email" id="email" name="email" type="email" placeholder="Введите e-mail" value="" />
           </li>
         </ul>
       </fieldset>
@@ -62,15 +62,15 @@
         <legend class="query-form__subtitle">Ваше общее впечатление:</legend>
         <ul class="query-form__list">
           <li class="query-form__item">
-            <input class="query-form__input query-form__input--radio" name="impression" id="impression1" type="radio" value="Скорее положительное" checked="checked" />
+            <input class="query-form__input query-form__input--radio" id="impression1" name="impression" type="radio" value="Скорее положительное" checked="checked" />
             <label class="query-form__label" for="impression1">Скорее положительное</label>
           </li>
           <li class="query-form__item">
-            <input class="query-form__input query-form__input--radio" name="impression" id="impression2" type="radio" value="Скорее отрицательное" />
+            <input class="query-form__input query-form__input--radio" id="impression2" name="impression" type="radio" value="Скорее отрицательное" />
             <label class="query-form__label" for="impression2">Скорее отрицательное</label>
           </li>
           <li class="query-form__item">
-            <input class="query-form__input query-form__input--radio" name="impression" id="impression3" type="radio" value="Затрудняюсь ответить" />
+            <input class="query-form__input query-form__input--radio" id="impression3" name="impression" type="radio" value="Затрудняюсь ответить" />
             <label class="query-form__label" for="impression3">Затрудняюсь ответить</label>
           </li>
         </ul>
@@ -79,32 +79,32 @@
         <legend class="query-form__subtitle">Посещенные достопримечательности:</legend>
         <ul class="query-form__list">
           <li class="query-form__item">
-            <input class="query-form__input query-form__input--checkbox" name="places[]" id="places1" type="checkbox" value="Мост Дьявола" checked="checked" />
+            <input class="query-form__input query-form__input--checkbox" id="places1" name="places[]" type="checkbox" value="Мост Дьявола" checked="checked" />
             <label class="query-form__label" for="places1">Мост Дьявола</label>
           </li>
           <li class="query-form__item">
-            <input class="query-form__input query-form__input--checkbox" name="places[]" id="places2" type="checkbox" value="Гора-Колокол" checked="checked" />
+            <input class="query-form__input query-form__input--checkbox" id="places2" name="places[]" type="checkbox" value="Гора-Колокол" checked="checked" />
             <label class="query-form__label" for="places2">Гора-Колокол</label>
           </li>
           <li class="query-form__item">
-            <input class="query-form__input query-form__input--checkbox" name="places[]" id="places3" type="checkbox" value="Слайд-парк" checked="checked" />
+            <input class="query-form__input query-form__input--checkbox" id="places3" name="places[]" type="checkbox" value="Слайд-парк" checked="checked" />
             <label class="query-form__label" for="places3">Слайд-парк</label>
           </li>
           <li class="query-form__item">
-            <input class="query-form__input query-form__input--checkbox" name="places[]" id="places4" type="checkbox" value="Красные скалы" />
+            <input class="query-form__input query-form__input--checkbox" id="places4" name="places[]" type="checkbox" value="Красные скалы" />
             <label class="query-form__label" for="places4">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="query-form__section">
-        <legend class="query-form__subtitle">Опишите свои эмоции:</legend>
+        <legend class="query-form__subtitle" for="emotions">Опишите свои эмоции:</legend>
         <ul class="query-form__list">
           <li class="query-form__item">
-            <textarea class="query-form__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="query-form__textarea" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </li>
         </ul>
       </fieldset>
-      <button class="query-form__button button" type="submit">Отправить отзыв</button>
+      <input class="query-form__button button" type="submit" value="Отправить отзыв" />
     </form>
   </main>
 
@@ -120,6 +120,24 @@
       <img class="developer__image" src="https://via.placeholder.com/150x150" alt="" title="" />
     </a>
   </footer>
+
+  <section class="failure-popup popup">
+    <div class="popup-container">
+      <h2 class="popup-title">Что-то пошло не так!</h2>
+      <p class="popup-text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
+      <button class="popup-button button">Ок</button>
+    </div>
+  </section>
+
+  <section class="success-popup popup">
+    <div class="popup-container">
+      <h2 class="popup-title">Ваш отзыв отправлен!</h2>
+      <p class="popup-text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
+      <div class="popup-container">
+        <button class="popup-button button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
